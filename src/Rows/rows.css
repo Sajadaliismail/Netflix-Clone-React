@@ -1,0 +1,46 @@
+
+
+.rowPost{
+    margin: 10px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding: 10px;
+    overflow-y: hidden;
+}
+
+.rowPost img:hover{
+    background-color: red;
+    transform: scale(1.2);
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.isLarge{
+max-height: 250px;
+}
+
+.isSmall{
+    max-height: 200px;
+}
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loading-overlay img {
+    width: 50%; 
+  }
